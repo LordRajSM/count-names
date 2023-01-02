@@ -1,0 +1,16 @@
+
+  <h3>array is {{ ogArr}}</h3>
+  <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Occurance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of countObj |async | keyvalue" [ngStyle]="{'background-color': item.value > 0 && item.value < 3 ? 'red' : (item.value > 2 && item.value < 10 ? 'yellow' : 'green') }">
+            <td>{{ item.key }}</td>
+            <td>{{ item.value }}</td>
+        </tr>
+    </tbody>
+</table>

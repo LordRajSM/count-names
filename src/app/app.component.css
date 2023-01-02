@@ -1,0 +1,21 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.color-green {
+  background-color: green;
+  color: black;
+}
+
+.color-yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.color-red {
+  background-color: red;
+  color: black;
+}
